@@ -8,4 +8,13 @@
 
 2022-01-09
 yarn add --dev hardhat
+yarn add --dev hardhat-deploy dotenv
+
 yarn hardhat compile
+
+yarn hardhat deploy --network kovan
+yarn hardhat deploy --network klay
+
+
+
+wCeik.sol --> 기존 인절미 카피코인 wCeik

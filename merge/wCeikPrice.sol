@@ -156,7 +156,7 @@ library SafeMath {
     }
 }
 
-interface ICeik {
+interface IwCeik {
 
     event Transfer(address indexed from, address indexed to, uint256 amount);
     event Approval(address indexed owner, address indexed spender, uint256 amount);
@@ -176,27 +176,27 @@ interface ICeik {
     function allowance(address owner, address spender) external view returns (uint256 remaining);
 }
 
-interface ICeikPool {
+interface IwCeikPool {
 
-    event SwapToCEIK(address indexed user, uint256 amount);
+    event SwapTowCeik(address indexed user, uint256 amount);
     event SwapToKlay(address indexed user, uint256 amount);
 
-    function swapToCEIK() payable external;
+    function swapTowCeik() payable external;
     function swapToKlay(uint256 amount) external;
 }
 
-contract CeikPrice {
+contract wCeikPrice {
     using SafeMath for uint256;
 
-    ICeik public ceik;
-    ICeikPool public pool;
+    IwCeik public wceik;
+    IwCeikPool public pool;
 
-    constructor(ICeik _ceik, ICeikPool _pool) public {
-        ceik = _ceik;
+    constructor(IwCeik _wceik, IwCeikPool _pool) public {
+        wceik = _wceik;
         pool = _pool;
     }
 
     function price() external view returns (uint256) {
-        return address(pool).balance.mul(1e8).div(ceik.balanceOf(address(pool)));
+        return address(pool).balance.mul(1e8).div(wceik.balanceOf(address(pool)));
     }
 }
