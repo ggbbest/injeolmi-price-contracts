@@ -1,6 +1,6 @@
 pragma solidity ^0.5.6;
 
-interface ICeik {
+interface IwCeik {
 
     event Transfer(address indexed from, address indexed to, uint256 amount);
     event Approval(address indexed owner, address indexed spender, uint256 amount);

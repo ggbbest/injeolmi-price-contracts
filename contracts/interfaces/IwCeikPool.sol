@@ -1,10 +1,10 @@
 pragma solidity ^0.5.6;
 
-interface ICeikPool {
+interface IwCeikPool {
 
-    event SwapToCEIK(address indexed user, uint256 amount);
+    event SwapTowCEIK(address indexed user, uint256 amount);
     event SwapToKlay(address indexed user, uint256 amount);
 
-    function swapToCEIK() payable external;
+    function swapTowCEIK() payable external;
     function swapToKlay(uint256 amount) external;
 }
