@@ -30,3 +30,6 @@ yarn hardhat deploy --network kovan -->
 yarn hardhat compile --network klay
 
 wCeik.sol --> 기존 인절미 카피코인 wCeik
+
+18 내 인생은 항상 줘도 못먹지...
+하드햇 어케 배포 하는거얌?
