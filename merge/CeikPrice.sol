@@ -156,7 +156,7 @@ library SafeMath {
     }
 }
 
-interface IInjeolmi {
+interface ICeik {
 
     event Transfer(address indexed from, address indexed to, uint256 amount);
     event Approval(address indexed owner, address indexed spender, uint256 amount);
@@ -176,7 +176,7 @@ interface IInjeolmi {
     function allowance(address owner, address spender) external view returns (uint256 remaining);
 }
 
-interface IInjeolmiPool {
+interface ICeikPool {
 
     event SwapToIJM(address indexed user, uint256 amount);
     event SwapToKlay(address indexed user, uint256 amount);
@@ -185,18 +185,18 @@ interface IInjeolmiPool {
     function swapToKlay(uint256 amount) external;
 }
 
-contract InjeolmiPrice {
+contract CeikPrice {
     using SafeMath for uint256;
 
-    IInjeolmi public ijm;
-    IInjeolmiPool public pool;
+    ICeik public ceik;
+    ICeikPool public pool;
 
-    constructor(IInjeolmi _ijm, IInjeolmiPool _pool) public {
-        ijm = _ijm;
+    constructor(ICeik _ceik, ICeikPool _pool) public {
+        ceik = _ceik;
         pool = _pool;
     }
 
     function price() external view returns (uint256) {
-        return address(pool).balance.mul(1e8).div(ijm.balanceOf(address(pool)));
+        return address(pool).balance.mul(1e8).div(ceik.balanceOf(address(pool)));
     }
 }
