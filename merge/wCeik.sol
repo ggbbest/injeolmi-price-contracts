@@ -1,3 +1,38 @@
+// 0xEAD262b2dFEf461CF1C5Ff003fd59DDA82f7Eaa3
+/*
+transaction hash	0xa8b4f5b2fbcff8b66fd0dafa1cac80bce17f2ec7b9ef60fc94ca43d065cdb213
+from	0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65
+to	wCeik.(constructor)
+gas	1885906 gas
+transaction cost	1885906 gas 
+hash	0xa8b4f5b2fbcff8b66fd0dafa1cac80bce17f2ec7b9ef60fc94ca43d065cdb213
+input	0x608...57373
+decoded input	{}
+decoded output	 - 
+logs	[
+	{
+		"from": "0xEAD262b2dFEf461CF1C5Ff003fd59DDA82f7Eaa3",
+		"topic": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+		"event": "OwnershipTransferred",
+		"args": {
+			"0": "0x0000000000000000000000000000000000000000",
+			"1": "0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65",
+			"previousOwner": "0x0000000000000000000000000000000000000000",
+			"newOwner": "0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65"
+		}
+	},
+	{
+		"from": "0xEAD262b2dFEf461CF1C5Ff003fd59DDA82f7Eaa3",
+		"topic": "0x6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f8",
+		"event": "PauserAdded",
+		"args": {
+			"0": "0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65",
+			"account": "0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65"
+		}
+	}
+]
+*/
+
 pragma solidity ^0.5.6;
 
 
