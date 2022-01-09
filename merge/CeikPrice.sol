@@ -178,10 +178,10 @@ interface ICeik {
 
 interface ICeikPool {
 
-    event SwapToIJM(address indexed user, uint256 amount);
+    event SwapToCEIK(address indexed user, uint256 amount);
     event SwapToKlay(address indexed user, uint256 amount);
 
-    function swapToIJM() payable external;
+    function swapToCEIK() payable external;
     function swapToKlay(uint256 amount) external;
 }
 
