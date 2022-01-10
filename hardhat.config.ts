@@ -22,11 +22,11 @@ const config: HardhatUserConfig = {
     //   chainId: 42,
     // },
     // ceik: { provider: () => provider, chainId: 8217, },
-    kovan: {
-      url: `https://public-node-api.klaytnapi.com/v1/cypress`,
-      accounts: [process.env.PK || ''],
-      chainId: 8217,
-    },
+    // kovan: {
+    //   url: `https://public-node-api.klaytnapi.com/v1/cypress`,
+    //   accounts: [process.env.PK || ''],
+    //   chainId: 8217,
+    // },
     klay: {
       url: `https://public-node-api.klaytnapi.com/v1/cypress`,
       accounts: [process.env.PK || ''],

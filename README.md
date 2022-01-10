@@ -2,7 +2,7 @@
 인절미 가격 가져오는 스마트 계약
 
 ## Mainnet
-- CeikPrice: [0x6E22cd771d0BBC18501F3113e01fD95947299Ca1](https://scope.klaytn.com/account/0x6E22cd771d0BBC18501F3113e01fD95947299Ca1)
+- 인절미Price: [0x6E22cd771d0BBC18501F3113e01fD95947299Ca1](https://scope.klaytn.com/account/0x6E22cd771d0BBC18501F3113e01fD95947299Ca1)
 
 - CeikPrice: [0x17e10666cF781C353fCf23464260fd450638Bb99](https://scope.klaytn.com/account/0x17e10666cF781C353fCf23464260fd450638Bb99)
 
@@ -31,5 +31,6 @@ yarn hardhat compile --network klay
 
 wCeik.sol --> 기존 인절미 카피코인 wCeik
 
-18 내 인생은 항상 줘도 못먹지...
-하드햇 어케 배포 하는거얌?
+yarn hardhat run script/deploywCeik.ts
+yarn hardhat run script/deploywCeikPrice.ts
+
